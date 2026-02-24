@@ -1,0 +1,16 @@
+# Build / packaging artifacts
+*.egg-info/
+dist/
+build/
+
+# Byte-code cache
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
