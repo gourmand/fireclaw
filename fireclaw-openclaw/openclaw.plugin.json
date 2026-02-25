@@ -1,0 +1,28 @@
+{
+  "name": "fireclaw",
+  "version": "0.1.0",
+  "description": "Blocks malware domain calls and email deletion by AI agents",
+  "entry": "dist/index.js",
+  "hooks": ["before_tool_call"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "blocklist": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Extra domains to block beyond the built-in list"
+      },
+      "allowlist": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Domains to allow, overriding the blocklist"
+      },
+      "strict": {
+        "type": "boolean",
+        "default": true,
+        "description": "When false, log warnings instead of blocking"
+      }
+    },
+    "additionalProperties": false
+  }
+}

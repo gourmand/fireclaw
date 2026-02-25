@@ -1,0 +1,20 @@
+{
+  "name": "fireclaw-openclaw",
+  "version": "0.1.0",
+  "description": "Fireclaw safety-net plugin for OpenClaw – blocks malware domains and email deletion",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/tests/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.4"
+  },
+  "license": "MIT"
+}
